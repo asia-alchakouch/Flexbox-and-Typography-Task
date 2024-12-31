@@ -1,0 +1,189 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* setting the font family for the website */
+*{
+    font-family: "Merriweather", serif;
+}
+
+/*************  body format **************/
+
+
+/* applying the following:
+ - margin and padding to 0
+ - line height
+ - box-sizing */
+ body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* applying font size and text alignment for headings and paragraphs*/
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+/*****************************************/
+
+/*************  header format **************/
+
+header{
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* appling flexbox to navigation */
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    text-size-adjust: 2rem;
+    padding: 2rem;
+}
+
+/*****************************************/
+
+/************* blog section format **************/
+
+/* h1 and h2 : changing color, font size, margin, and text alignment */
+section .title {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+/* adding flexbox to blog list*/
+.blog-list{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 6rem;
+    background:#f1f1f1;
+    border: 1px solid lightgray;
+
+}
+
+/* making blog list responsive for small screen size */
+
+@media(max-width: 800px){
+    .blog-list{
+        padding: 1rem; 
+    }
+}
+
+/* adding borders, padding, and margin for separation */
+article {
+    background: white;
+    padding: 10px 20px;
+    margin: 4rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border: 1px solid lightgray;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/**********************************************/
+
+/*************  contact format **************/
+
+.contact-section{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+/********************************************/
+
+/************* footer format **************/
+
+footer{
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- form section -- */
+
+.footer-contact-form{
+    background: white;
+    color: black;
+    padding: 30px 0px;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+}
+
+.footer-contact-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea{
+    margin: 5px;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+input[type=submit]{
+    color:  white;
+    background: #333;
+    padding: 0.5rem;
+}
+
+/* --- table section -- */
+
+.footer-contact-information{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+td , th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.4rem;
+}
+
+
+/**********************************************/
